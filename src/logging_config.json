@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "simple": {
+      "format": "%(asctime)s %(name)s:%(lineno)d %(funcName)s [%(levelname)s]: %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "level": "DEBUG",
+      "class": "logging.StreamHandler",
+      "formatter": "simple"
+    },
+    "file": {
+      "level": "DEBUG",
+      "class": "logging.handlers.RotatingFileHandler",
+      "formatter": "simple",
+      "filename": "logs/co2_sensor.log",
+      "encoding": "utf-8",
+      "maxBytes": 1048576,
+      "backupCount": 2
+    }
+  },
+  "loggers": {
+    "__main__": {
+      "handlers": [
+        "console",
+        "file"
+      ],
+      "level": "DEBUG"
+    }
+  }
+}

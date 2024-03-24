@@ -1,0 +1,21 @@
+{
+  "name": "udco2s-to-sqlite-py",
+  "dockerComposeFile": [
+    "../compose.yaml",
+    "compose.yaml"
+  ],
+  "overrideCommand": true,
+  "service": "app",
+  "workspaceFolder": "/home/user/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-python.isort",
+        "ms-python.mypy-type-checker"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      args:
+        USERNAME: user
+        ENV: dev
+    entrypoint: "sh"
+    command: sleep infinity
+    volumes:
+      - db-volume-vscode:/home/user/workspace/db
+      - .:/home/user/workspace
+
+volumes:
+  db-volume-vscode:

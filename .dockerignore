@@ -1,0 +1,12 @@
+.git/
+.gitignore
+docker/
+.dockerignore
+compose.yaml
+.devcontainer/
+.vscode/
+__pycache__/
+README.md
+logs/*.log
+logs/.gitignore
+commitlint.config.js
