@@ -10,3 +10,4 @@ README.md
 logs/*.log
 logs/.gitignore
 commitlint.config.js
+LICENSE
